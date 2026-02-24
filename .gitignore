@@ -1,0 +1,15 @@
+# Ignore IDE
+.idea/
+*.iml
+
+# Ignore build
+target/
+*.log
+
+# Ignore Docker volumes
+volume-data/
+*/volume-data/
+
+# Ignore MySQL files
+*.sock
+mysql_keycloak_data/
