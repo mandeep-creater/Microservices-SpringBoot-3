@@ -25,6 +25,8 @@ public class Order {
     private BigDecimal price;
     private Integer quantity;
 
+    private  String email;
+
     public Long getId() {
         return id;
     }
@@ -63,5 +65,13 @@ public class Order {
 
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
