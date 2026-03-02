@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+
 public class ProductService {
 
     @Autowired
@@ -31,7 +32,6 @@ public class ProductService {
         product.setPrice(productRequest.getPrice());
         product.setDescription(productRequest.getDescription());
         productRepo.save(product);
-
         log.info("Product is saved ");
 
         return   new ProductResponse(product.getId(), product.getName(), product.getDescription(),product.getPrice());
